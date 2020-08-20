@@ -9,6 +9,8 @@ RUN pip install --proxy=${http_proxy}\
     tensorflow\
     pyngrok\
     streamlit\
-    Flask
+    Flask\
+    implicit\
+    gensim
 
 USER jovyan
