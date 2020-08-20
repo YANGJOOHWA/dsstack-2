@@ -1,9 +1,14 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/all-spark-notebook
+#FROM jupyter/scipy-notebook
 
 USER root
 
 RUN pip install --proxy=${http_proxy}\
     psycopg2-binary\
-    minio
+    minio\
+    tensorflow\
+    pyngrok\
+    streamlit\
+    Flask
 
 USER jovyan
